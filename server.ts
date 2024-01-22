@@ -1,7 +1,7 @@
-import { serve } from "https://deno.land/std@0.140.0/http/server.ts";
+import app from "https://fireship.io/server.ts";
 
 function handler(_req: Request): Response {
   return new Response("Hello, World");
 }
 
-serve(handler);
+app(handler);
